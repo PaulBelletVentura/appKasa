@@ -1,0 +1,108 @@
+$primary-color: #ffffff; 
+$secondary-color: #f7f7f7;
+$tertiary-color: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+$quaternary-color: #000000; 
+
+@import '../abstracts/mixins';
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  height: 150px;
+  background-color: $primary-color;
+  color: $primary-color; 
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    margin-left: 60px;
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    @include font;
+  }
+}
+
+.menu {
+    @include font;
+  
+    a {
+      text-decoration: none;
+      position: relative;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+  
+      &.active {
+        text-decoration: underline;
+      }
+
+  
+      
+    }
+  }
+
+  .logo {
+    width: 250px;
+    height: 150px;
+  }
+  
+  .logo-wrapper {
+    margin-left: 0;
+    
+  }
+  
+
+
+  /* Affichage en dessous de 1240px */
+@media (max-width: 1240px) {
+  .header {
+    display: flex;
+    width: 450px;
+    max-width: 300px;
+    margin-left: 0;
+  }
+}
+
+/* Affichage spécifique pour smartphones */
+@media (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: left;
+    width: 250px;
+    max-width: 300px;
+    margin-left: 0;
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo-wrapper {
+    margin-left: 0;
+    
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    a {
+      margin-left: 20px;
+      color: rgb(255, 0, 0);
+      font-size: 24px;
+      @include font;
+      width: 115px;
+    }
+  }
+}

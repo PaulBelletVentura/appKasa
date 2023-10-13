@@ -1,0 +1,26 @@
+@import '../abstracts/mixins';
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+    .footer_logo {
+      width: 100px;
+      height: auto;
+      margin-top: 66px;
+      margin-bottom: 30px;
+    }
+  
+    .footer_texte {
+      margin-top: 10px;
+      font-size: 14px;
+      @include font;
+      color: #ffffff;
+    }
+  }
+  

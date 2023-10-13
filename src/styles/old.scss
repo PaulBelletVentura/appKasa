@@ -1,0 +1,61 @@
+$primary-color: #ff0000; // Rouge
+$secondary-color: #00FF00; // Vert
+$tertiary-color: #0000FF; // Bleu
+$quaternary-color: #FFFF00; // Jaune
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
+  background-color: $primary-color;
+  color: #FFFFFF; 
+}
+
+.banner {
+  margin: 20px 100px;
+  background-color: $secondary-color;
+  color: #FFFFFF; 
+}
+
+.content {
+  margin: 20px 100px;
+}
+
+.sub-section {
+  background-color: $tertiary-color;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.footer {
+  margin: 20px 100px;
+  background-color: $quaternary-color;
+  color: #FFFFFF;
+}
+
+.logo {
+  width: 250px;
+  height: 150px;
+}
+
+.logo-wrapper {
+  margin-left: 0;
+}
+
+.equipment-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+

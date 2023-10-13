@@ -1,0 +1,53 @@
+@import '../abstracts/mixins';
+
+.div3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    @include font;
+  
+    .div3-collapse {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; 
+      width: 100%;
+      
+  
+      & > * {
+        width: calc(50% - 43px); 
+        background: #FF6060;
+      border-radius: 10px;
+      }
+    }
+  }
+
+  .collapse-title {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+
+   /* Affichage en dessous de 1240px */
+@media (max-width: 1240px) {
+ 
+  
+}
+
+/* Affichage spécifique pour smartphones */
+@media (max-width: 767px) {
+  .div3-collapse {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 330px;
+    margin: 0 10%;
+
+    .collapse {
+      width: 100%;
+    }
+  }
+
+
+}
+  
